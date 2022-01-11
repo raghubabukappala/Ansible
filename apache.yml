@@ -3,4 +3,4 @@
   become: true
   tasks:
     - name: Install latest version of Apache
-      shell: mkdir test
+      shell: sudo mkdir test
