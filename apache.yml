@@ -2,8 +2,8 @@
 - hosts: all
   become_user: true
   tasks:
-    - name: Install latest version of Apache
-      shell: sudo mkdir sample5
+    #- name: Install latest version of Apache
+    #  shell: sudo mkdir sample5
     - name: Install Apache2
       apt: name=apache2 update_cache=yes state=latest
    # - name: start Apache server
