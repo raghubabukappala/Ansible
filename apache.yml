@@ -3,4 +3,4 @@
   become: true
   tasks:
     - name: Install latest version of Apache
-      shell: apt install apache2 
+      shell: mkdir test
