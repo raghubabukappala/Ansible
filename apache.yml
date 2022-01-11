@@ -4,7 +4,7 @@
   tasks:
     - name: Install latest version of Apache
       shell: sudo mkdir sample4
-    - name: Install Apache
+    - name: Install Apache2
        apt: name=apache2 update_cache=yes state=latest
    # - name: start Apache server
    #   service:
