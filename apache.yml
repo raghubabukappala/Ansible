@@ -4,12 +4,12 @@
   tasks:
     - name: Install latest version of Apache
       shell: sudo mkdir sample3
-    - name: start apache server
+    - name: start Apache server
       service:
-      name: httpd
-      state: started
-      enabled: True
+        name: httpd
+        state: started
+        enabled: True
     - name: Deploy Static Website
       copy:
-      src: index.html
-      dest: /var/www/html/
+        src: index.html
+        dest: /var/www/html/
