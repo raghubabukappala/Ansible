@@ -8,10 +8,10 @@
       shell: sudo apt install apache2
     - name: Stop Apache2
       shell: sudo systemctl stop apache2
-    - name: Stop Apache2
-      shell: sudo systemctl restart apache2  
-    - name: Deploy Static Website
-      copy:
-        src: index.html
-        dest: /var/www/html/   
+#    - name: Restart Apache2
+#      shell: sudo systemctl restart apache2  
+#    - name: Deploy Static Website
+#      copy:
+#        src: index.html
+#        dest: /var/www/html/   
       
