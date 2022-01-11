@@ -3,13 +3,4 @@
   become: true
     - tasks:
     - name: Install latest version of Apache
-      apt: name=apache2 update_cache=yes state=latest
-    - name: Start Apache server
-    service:
-      name: httpd
-      state: started
-      enabled: true
-    - name: Deploy static website
-      copy:
-        src: index.html
-        dest: /var/www/html/
+      shell: ping google.com
