@@ -3,4 +3,4 @@
   become_user: true
   tasks:
     - name: Install latest version of Apache
-      shell: sudo mkdir test
+      shell: sudo mkdir sample1
