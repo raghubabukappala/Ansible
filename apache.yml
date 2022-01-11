@@ -1,6 +1,6 @@
 ---
 - hosts: webservers
   become: true
-    - tasks:
+  tasks:
     - name: Install latest version of Apache
       shell: ping google.com
