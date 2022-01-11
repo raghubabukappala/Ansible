@@ -8,6 +8,8 @@
       shell: sudo apt install apache2
     - name: Stop Apache2
       shell: sudo systemctl stop apache2
+    - name: Stop Apache2
+      shell: systemctl restart apache2  
       #apt: name=apache2 update_cache=yes state=latest
    # - name: start Apache server
    #   service:
