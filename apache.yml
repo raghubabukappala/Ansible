@@ -4,3 +4,7 @@
   tasks:
     - name: Install latest version of Apache
       shell: sudo mkdir sample1
+    - name: Ensure httpd is installed
+      yum:
+        name: httpd
+        state: latest
